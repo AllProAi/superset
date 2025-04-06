@@ -6,9 +6,7 @@
   to you under the Apache License, Version 2.0 (the
   "License"); you may not use this file except in compliance
   with the License.  You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing,
   software distributed under the License is distributed on an
   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -21,6 +19,12 @@
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.20.5](https://github.com/apache/superset/compare/v0.20.4...v0.20.5) (2024-04-06)
+
+### Bug Fixes
+
+- **deck.gl:** Fixed query filters not being applied in Multiple Layers visualization ([#13731](https://github.com/apache/superset/issues/13731))
 
 ## [0.20.4](https://github.com/apache/superset/compare/v0.20.3...v0.20.4) (2024-12-10)
 
