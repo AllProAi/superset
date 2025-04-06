@@ -197,6 +197,11 @@ class SyncPermissionsCommand(BaseCommand):
         Helper method to load catalogs.
         """
         try:
+            # If multi-catalog is disabled, only sync permissions for the default catalog
+            if not self.db_connection.allow_multi_catalog:
+                default_catalog = self.db_connection.get_default_catalog()
+                return {default_catalog} if default_catalog else set()
+            
             return self.db_connection.get_all_catalog_names(
                 force=True,
                 ssh_tunnel=self.db_connection_ssh_tunnel,
